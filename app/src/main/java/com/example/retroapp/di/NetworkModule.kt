@@ -1,6 +1,6 @@
 package com.example.retroapp.di
 
-import com.example.retroapp.api.VideoApiService
+import com.example.retroapp.api.ProductApiService
 import org.koin.dsl.module
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -12,5 +12,5 @@ val networkModule = module {
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
-    single { get<Retrofit>().create(VideoApiService::class.java) }
+    single { get<Retrofit>().create(ProductApiService::class.java) }
 }

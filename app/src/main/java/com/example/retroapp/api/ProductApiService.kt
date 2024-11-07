@@ -1,13 +1,12 @@
 package com.example.retroapp.api
 
-import com.example.retroapp.Films
 import com.example.retroapp.data.ResponseProducts
 import com.example.retroapp.data.ResponseSingleProducts
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Path
 
-interface VideoApiService {
+interface ProductApiService {
     @GET("/products")
     fun getVideos(): Call<ResponseProducts>
 
